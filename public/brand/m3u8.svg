@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <!-- Coral gradient for play button -->
+    <linearGradient id="coralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4896e"/>
+      <stop offset="100%" stop-color="#cc785c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Warm cream background with ink border -->
+  <rect width="64" height="64" rx="12" fill="#f5f0e8" stroke="#141413" stroke-width="1.5"/>
+
+  <!-- Play triangle (coral primary) -->
+  <polygon points="22,14 22,50 52,32" fill="url(#coralGrad)"/>
+
+  <!-- Signal waves (accent-teal) -->
+  <g fill="none" stroke="#5db8a6" stroke-width="2.5" stroke-linecap="round" opacity="0.7">
+    <path d="M8,28 Q12,24 16,28"/>
+    <path d="M4,36 Q10,28 16,36"/>
+    <path d="M8,44 Q12,40 16,44"/>
+  </g>
+</svg>

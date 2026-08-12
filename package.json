@@ -1,0 +1,23 @@
+{
+  "name": "tangtangit-dbf-tool",
+  "version": "1.0.0",
+  "description": "DBF ⇄ XLSX 在线转换工具 — 浏览器端纯 JS 转换引擎（Vue3 + Vite 重构）",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "vue": "^3.5.13",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.0.7"
+  },
+  "keywords": ["dbf", "xlsx", "converter", "excel", "gbk", "dbase", "vue", "vite"],
+  "license": "MIT"
+}
