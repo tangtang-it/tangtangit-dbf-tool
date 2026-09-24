@@ -18,8 +18,8 @@ import DbfArticle from '@/components/DbfArticle.vue';
           <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>
           免费 · 本机处理 · 数据不上传
         </span>
-        <h1>DBF 转 Excel 工具：在线 DBF ⇄ XLSX 转换</h1>
-        <p class="lead">自动识别 GBK / UTF-8 中文编码，支持批量与超大文件流式处理。专为国内老财务、ERP 与台账数据设计，全程本地安全运行。</p>
+        <h1>DBF to Excel 在线转换工具：快速批量将 DBF 转为 Excel</h1>
+        <p class="lead">专为财务与 ERP 数据打造的 <strong>dbf to excel</strong> 在线转换工具。自动识别 GBK / UTF-8 中文编码，支持批量将 DBF 格式快速转换为 Excel (XLSX) 文件，数据全程本机处理，安全高效。</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="index.html#tool">免费在线转换</a>
           <a class="btn btn-secondary" href="features.html">查看功能特性</a>

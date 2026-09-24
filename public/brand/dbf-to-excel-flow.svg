@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf9f5"/>
+      <stop offset="100%" stop-color="#f2ebe0"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d98266"/>
+      <stop offset="100%" stop-color="#b86145"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#141413" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景画板 -->
+  <rect width="800" height="320" rx="16" fill="url(#bgGrad)" stroke="#e6dfd8" stroke-width="2"/>
+  
+  <!-- 左侧：DBF 输入卡片 -->
+  <g transform="translate(60, 50)" filter="url(#cardShadow)">
+    <rect width="180" height="220" rx="12" fill="#ffffff" stroke="#e6dfd8" stroke-width="1.5"/>
+    <rect width="180" height="42" rx="12" fill="#cc785c"/>
+    <rect y="30" width="180" height="12" fill="#cc785c"/>
+    <text x="90" y="27" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="16" fill="#ffffff">.DBF 文件</text>
+    <text x="24" y="75" font-family="monospace" font-size="12" fill="#6c6a64">dBASE / FoxPro</text>
+    <rect x="24" y="90" width="132" height="12" rx="3" fill="#f0eae1"/>
+    <rect x="24" y="112" width="100" height="12" rx="3" fill="#f0eae1"/>
+    <rect x="24" y="134" width="120" height="12" rx="3" fill="#f0eae1"/>
+    <rect x="24" y="156" width="80" height="12" rx="3" fill="#f0eae1"/>
+    <text x="90" y="198" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#cc785c">GBK / UTF-8 编码</text>
+  </g>
+  
+  <!-- 中间：本地流式转换引擎 -->
+  <g transform="translate(300, 70)">
+    <circle cx="100" cy="90" r="70" fill="#ffffff" stroke="#cc785c" stroke-width="2" filter="url(#cardShadow)"/>
+    <!-- 双向流转箭头 -->
+    <path d="M70 75h50M110 65l15 10-15 10" fill="none" stroke="#cc785c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M130 105H80M90 95l-15 10 15 10" fill="none" stroke="#5db8a6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <text x="100" y="132" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#141413">dbf to excel</text>
+    <text x="100" y="148" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6c6a64">100% 浏览器本地流式</text>
+    
+    <!-- 状态小徽标 -->
+    <rect x="40" y="5" width="120" height="24" rx="12" fill="#e4f1e7" stroke="#5db872" stroke-width="1"/>
+    <text x="100" y="21" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#2d7a44">✓ 零云端上传隐私保护</text>
+  </g>
+  
+  <!-- 右侧：Excel 输出卡片 -->
+  <g transform="translate(560, 50)" filter="url(#cardShadow)">
+    <rect width="180" height="220" rx="12" fill="#ffffff" stroke="#e6dfd8" stroke-width="1.5"/>
+    <rect width="180" height="42" rx="12" fill="#2d7a44"/>
+    <rect y="30" width="180" height="12" fill="#2d7a44"/>
+    <text x="90" y="27" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="16" fill="#ffffff">.XLSX 文件</text>
+    <text x="24" y="75" font-family="monospace" font-size="12" fill="#6c6a64">Microsoft Excel</text>
+    <!-- 表格示意线条 -->
+    <rect x="24" y="90" width="132" height="18" rx="2" fill="#eaf4ec"/>
+    <rect x="24" y="114" width="132" height="16" rx="2" fill="#f8faf8"/>
+    <rect x="24" y="136" width="132" height="16" rx="2" fill="#ffffff" stroke="#e6dfd8" stroke-width="0.8"/>
+    <rect x="24" y="158" width="132" height="16" rx="2" fill="#f8faf8"/>
+    <text x="90" y="198" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#2d7a44">自动映射单元格格式</text>
+  </g>
+</svg>
