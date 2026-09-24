@@ -3,6 +3,7 @@ import SiteNav from '@/components/SiteNav.vue';
 import SiteFooter from '@/components/SiteFooter.vue';
 import Starfield from '@/components/Starfield.vue';
 import ConvertTool from '@/components/ConvertTool.vue';
+import DbfArticle from '@/components/DbfArticle.vue';
 </script>
 
 <template>
@@ -17,7 +18,7 @@ import ConvertTool from '@/components/ConvertTool.vue';
           <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>
           免费 · 本机处理 · 数据不上传
         </span>
-        <h1>DBF 与 Excel 快速双向转换</h1>
+        <h1>DBF 转 Excel 工具：在线 DBF ⇄ XLSX 转换</h1>
         <p class="lead">自动识别 GBK / UTF-8 中文编码，支持批量与超大文件流式处理。专为国内老财务、ERP 与台账数据设计，全程本地安全运行。</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="index.html#tool">免费在线转换</a>
@@ -183,6 +184,8 @@ import ConvertTool from '@/components/ConvertTool.vue';
       </div>
     </div>
   </section>
+
+  <DbfArticle />
 
   <SiteFooter />
 </template>

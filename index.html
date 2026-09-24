@@ -3,19 +3,90 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DBF ⇄ XLSX 在线转换工具 | 本地安全 · 批量 · 支持中文编码</title>
-<meta name="description" content="免费的 DBF 与 Excel(XLSX) 双向转换工具。自动识别 GBK/UTF-8 编码，支持批量转换、大文件流式处理，数据全程在本机，不上传云端。兼容国内老财务/ERP 软件。">
-<meta name="keywords" content="DBF转Excel, XLSX转DBF, DBF转换工具, DBF在线转换, 台账转换, GBK编码, ERP, 财务软件">
+<title>DBF 转 Excel 工具 | 免费在线 DBF ⇄ XLSX 双向转换</title>
+<meta name="description" content="免费的 DBF 与 Excel (XLSX) 工具，完美支持 dbf to excel 及反向导出转换。自动识别当前 dbf 文件的中文字符编码，支持多文件大体积 DBF 数据库直接流式处理，完全不必上传。">
+<meta name="keywords" content="dbf, dbf to excel, dbf文件, Excel转换, dbf转xlsx, DBF导出, 财务数据转换, GBK识别">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://dbf.tangtangit.com/">
-<meta property="og:title" content="DBF ⇄ XLSX 在线转换工具">
-<meta property="og:description" content="免费的 DBF 与 Excel 双向转换工具，本地安全、支持批量与中文编码。">
+<meta property="og:title" content="DBF 转 Excel 工具 | 免费在线 DBF ⇄ XLSX 双向转换">
+<meta property="og:description" content="免费流式双向 DBF 转换工具，支持大文件与复杂中文字段类型映射，安全可靠的数据本地处理。">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://dbf.tangtangit.com/">
+<meta property="og:image" content="https://dbf.tangtangit.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DBF 转换工具：DBF 与 Excel 快速双向处理">
+<meta name="twitter:description" content="零信任本地引擎，超高性能完成百万行 dbf to excel 的无损提取转化。">
+<meta name="twitter:image" content="https://dbf.tangtangit.com/og-image.jpg">
 <meta name="theme-color" content="#cc785c">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "在线 DBF 转换工具",
+  "alternateName": "DBF 转 Excel 工具",
+  "url": "https://dbf.tangtangit.com/",
+  "description": "提供安全高效的 DBF 格式与 Excel XLSX 格式的互转服务，完美解决老式 ERP 系统与现代办公软件间的数据衔接。",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CNY"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "是否支持中文字符的 DBF 文件？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "绝对支持。我们的程序通过特殊的编码探针会自动解析出正确的 language driver id，特别对 GBK 和 CP936 进行了特别优化，转到 Excel 时完美保持汉字。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "dbf to excel 转换有文件大小限制吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "基于纯前端流式处理，原则上仅受限于您的浏览器可用内存。建议单文件体积保守点在 300MB 以内，相当于超百万行的记录均可顺利完成转换导出。"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div id="app"></div>
+<noscript>
+  <div style="background:#fff; padding:20px; font-family:sans-serif; color:#333;">
+    <h1>DBF 转换工具：DBF 与 Excel 在线快速双向转换</h1>
+    <p>我们的免费在线转换引擎，专门解决传统的 <strong>dbf to excel</strong> 转换难题，彻底消灭乱码，安全高效流式处理。</p>
+    
+    <h2>关于 DBF 格式与数据转换全指南</h2>
+    <h3>什么是 DBF 格式文件？</h3>
+    <p>DBF 格式（dBase Database File）最初由 Ashton-Tate 公司在上世纪 80 年代为其 dBase 数据库管理系统开发，随后被 FoxPro、Clipper、Visual FoxPro 等广泛继承。作为一个拥有悠久历史的小型桌面级关系型数据库单表文件格式，DBF 文件至今在企业中仍扮演着不可替代的角色。它采用结构化的记录存储方式，通过特有的文件头设计，能够紧凑地记录每个字段的数据类型（如字符、数值、日期、逻辑布尔值等）。尽管在当前的现代化云端数据库时代，DBF 早已不再作为主力在线核心数据库存储数据，但凭借着其极其简单和坚如磐石的文件结构，在许多行业尤其是古老的财务系统、政府报税数据流转、气象数据汇总、地理信息系统（GIS/Shapefile的核心属性表格式）乃至各种 ERP（企业资源规划）对账系统中，仍然频繁看到 DBF 的身影。</p>
+
+    <h3>为什么我们需要将 DBF 转 Excel (dbf to excel)？</h3>
+    <p>对于传统的财务和人事统计人员来说，维护旧有系统的主要难点在于查阅和审计数据。现代办公电脑上通常不再安装需要专有运行库的 Visual FoxPro 等陈旧数据库软件。而日常办公往往重度依赖于 Microsoft Excel 或 WPS Spreadsheet 来进行透视、筛选和图表制作。</p>
+    <p>将 <strong>dbf to excel</strong> （DBF 导出为 XLSX 或 XLS 格式），是实现跨时代数据对接的关键操作。利用 Excel 的超级本特性和透视表，现代员工能够无缝接管基于 DBF 沉淀下来的账套历史数据。然而在这个转换过程中，经常会遇到许多无法靠简单重命名扩展名解决的问题，这就是为什么您需要一款专业的在线 DBF 转换工具：</p>
+    <ul>
+      <li><strong>编码乱码问题：</strong> 许多国内古旧系统软件（如用友、金蝶早期版本、各种地方性政务上报系统）默认采用 GBK 或 CP936 编码。强行用某些只能识别 UTF-8 或西方字符集的现代流行数据工具直接读取时，中文字符将变成完全不可读的乱序乱码。我们的工具具备自动探测及强制指定 GBK 读取和导出的能力。</li>
+      <li><strong>超大体积与截断：</strong> 虽然 DBF 的列数有上限，但这并不妨碍它可以存储近百万行极长的数据集合，文件大小可能达到数百兆甚至几个 G。如果未经流式处理就直接载入，很容易发生内存崩溃。我们的批量流式处理能够极大地提高转换性能，保护浏览器内存在安全的水位之内。</li>
+      <li><strong>特殊字段映射处理：</strong> Excel 没有专门的 dBASE 原生逻辑字段（L）格式和专用纯日期字节码。在进行 dbf 到 xlsx 转换时，我们需要一个强健的引擎来妥善映射数据，当逆向把 xlsx 从 excel 转换回 dbf 送去古董级终端读取时，引擎又必须正确地基于内容猜测出相应的 dBASE III 数据长度和字段类型，避免长短不一导致的读取崩溃。</li>
+    </ul>
+
+    <h3>如何保证 DBF 数据的转换安全性？</h3>
+    <p>对很多依赖 DBF 文件的企业而言，里面的表格可能包含了核心供应商名单、账套总账、或者隐私度极高的人力资源薪酬信息。在追求工具简便性的同时，由于安全保密的要求，用户往往不能随便把文件上传到各种“免费在线云转换”服务器上，那可能导致数据留档泄漏。</p>
+    <p>本 DBF 双向在线转换工具依托了前沿的现代浏览器前端计算能力（WebWorker 与原生 ArrayBuffer流 API）。当您将 .dbf 或 .xlsx 拖入转换框时：</p>
+    <p>数据不会通过网络传递给任何远程服务器 ；不论您的 DBF 体积有多大，哪怕有几百万条记录，整个转换过程都在您的设备浏览器闭环之内完成了“拆解 - 处理 - 重新生成文件”。对于需要严格合规的企业与机构，这提供了一种“零信任架构”般的数据卫生保证，您得到的只是单纯的高速体验，完全切去了任何网络滞留的安全隐患。</p>
+  </div>
+</noscript>
 <script type="module" src="/src/main-home.js"></script>
 </body>
 </html>
