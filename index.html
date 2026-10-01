@@ -22,48 +22,88 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "DBF to Excel 在线转换工具",
-  "alternateName": "DBF 转 Excel 在线工具",
-  "url": "https://dbf.tangtangit.com/",
-  "description": "专业高效的 DBF to Excel 双向转换工具，完美解决老旧财务系统、ERP 与现代 Excel 表格间的数据对接。",
-  "applicationCategory": "UtilitiesApplication",
-  "operatingSystem": "All",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "CNY"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "如何将 DBF 转为 Excel (dbf to excel)？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "只需在页面工具区直接拖入一个或多个 .dbf 文件，系统会自动识别 GBK/UTF-8 编码，点击转换后即可一键导出为标准的 Excel (XLSX) 表格或打包 ZIP 下载。"
+      "@type": "Organization",
+      "@id": "https://dbf.tangtangit.com/#organization",
+      "name": "糖糖IT (TangTang IT)",
+      "url": "https://www.tangtangit.com/",
+      "logo": "https://dbf.tangtangit.com/favicon.svg",
+      "description": "专注高可用本地离线数据转换工具、多媒体引擎与独立开发工作流。",
+      "sameAs": [
+        "https://github.com/tangtang-it",
+        "https://space.bilibili.com/393222378"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dbf.tangtangit.com/#website",
+      "url": "https://dbf.tangtangit.com/",
+      "name": "DBF to Excel 在线转换工具",
+      "publisher": {
+        "@id": "https://dbf.tangtangit.com/#organization"
+      },
+      "inLanguage": "zh-CN"
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://dbf.tangtangit.com/#webapp",
+      "name": "DBF to Excel 在线转换工具",
+      "alternateName": "DBF 转 Excel 在线工具",
+      "url": "https://dbf.tangtangit.com/",
+      "description": "专业高效的 DBF to Excel 转换工具，完美解决老旧财务系统、ERP 与现代 Excel 表格间的数据对接。",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires HTML5 File API and JavaScript",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CNY"
+      },
+      "author": {
+        "@id": "https://dbf.tangtangit.com/#organization"
+      },
+      "creator": {
+        "@id": "https://dbf.tangtangit.com/#organization"
       }
     },
     {
-      "@type": "Question",
-      "name": "dbf to excel 转换会出现中文乱码吗？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "不会。针对国内老财务与 ERP 系统默认采用的 GBK/CP936 编码，本工具内置了编码自动嗅探与智能纠偏引擎，确保转换出来的 Excel 中文字符完整清晰。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "dbf to excel 转换有文件体积限制吗？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "基于纯前端流式处理技术，内存占用恒定。单文件推荐在 300MB 以内，支持十万至百万行大型账套流畅转为 Excel 表格。"
-      }
+      "@type": "FAQPage",
+      "@id": "https://dbf.tangtangit.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "如何将 DBF 转为 Excel (dbf to excel)？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "只需在页面工具区直接拖入一个或多个 .dbf 文件，系统会自动识别 GBK/UTF-8 编码，点击转换后即可一键导出为标准的 Excel (XLSX) 表格或打包 ZIP 下载。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "dbf to excel 转换会出现中文乱码吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不会。针对国内老财务与 ERP 系统默认采用的 GBK/CP936 编码，本工具内置了编码自动嗅探与智能纠偏引擎，确保转换出来的 Excel 中文字符完整清晰。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "dbf to excel 转换有文件体积限制吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "基于纯前端流式处理技术，内存占用恒定。单文件推荐在 300MB 以内，支持十万至百万行大型账套流畅转为 Excel 表格。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "DBF to Excel 工具遵循哪些文件格式国际标准？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "本工具严格遵循 Ashton-Tate dBase 二进制协议规范、ISO/IEC 29500 (XLSX) 国际标准及 IETF RFC 4180 CSV 规范，纯本地离线处理保证数据安全。"
+          }
+        }
+      ]
     }
   ]
 }
@@ -199,7 +239,26 @@
           <h3>② 确认编码与配置</h3>
           <p>系统默认采用 GBK 智能解析，亦可根据特殊账套需求手动切换为 UTF-8 或 Big5 字符集。</p>
         </div>
-        <div class="card">
+        
+    <!-- Technical Specifications, Standards & Citations Section -->
+    <div class="card" style="margin-top: 2rem; border-left: 4px solid var(--accent, #cc785c); background: rgba(204, 120, 92, 0.04); padding: 1.5rem; border-radius: 8px;">
+      <h2 style="font-size: 1.25rem; font-weight: 600; color: #2c3e50; margin-top: 0; margin-bottom: 0.75rem;">DBF to Excel 工具遵循哪些国际技术规范与标准？</h2>
+      <p style="font-size: 0.95rem; line-height: 1.6; color: #4B5563; margin-bottom: 0.75rem;">
+        为了保证历史政企账套与现代办公软件间的数据严密性与无损迁移，本工具底层严格依循以下工业级格式标准：
+      </p>
+      <ul style="line-height: 1.8; color: #4B5563; margin-bottom: 1rem; padding-left: 1.25rem;">
+        <li><strong>DBF 格式规范</strong>：遵循 <cite>Ashton-Tate dBase III / IV / V 及 Visual FoxPro (.dbf)</cite> 结构体与字段定义标准。</li>
+        <li><strong>Excel 表格标准</strong>：遵循 <cite>ECMA-376 / ISO/IEC 29500 (Office Open XML / XLSX)</cite> 电子表格技术规范。</li>
+        <li><strong>通用文本规范</strong>：遵循 <cite>IETF RFC 4180 (Common Format and MIME Type for CSV)</cite> 逗号分隔符数据标准。</li>
+        <li><strong>核心处理引擎</strong>：采用开源可信赖的 <cite>SheetJS (xlsx)</cite> 与浏览器端原生 <cite>Web Streams API</cite>。</li>
+      </ul>
+      <footer style="font-size: 0.85rem; color: #6B7280; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 0.5rem;">
+        由 <a href="https://www.tangtangit.com/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">糖糖IT</a> 团队独立开发与维护 • 100% 浏览器本地离线沙盒运算 • 绝不上传文件内容
+      </footer>
+    </div>
+
+
+    <div class="card">
           <h3>③ 导出为 Excel (XLSX)</h3>
           <p>点击「开始转换」按钮，数据秒级解析完毕，即可直接保存为标准 Excel 表格或批量打包下载。</p>
         </div>

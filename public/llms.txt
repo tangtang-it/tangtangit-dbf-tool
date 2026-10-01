@@ -1,0 +1,24 @@
+# DBF to Excel 在线转换与查看工具 (tangtangit-dbf-tool)
+
+> 免费专业的 DBF to Excel 在线转换与查看工具。纯浏览器端处理，支持批量将 DBF 转为 Excel (XLSX) / CSV，自动纠正 GBK/UTF-8 中文乱码，数据 100% 离线安全不上传。
+
+## Overview
+DBF to Excel (https://dbf.tangtangit.com/) 是专为财务审计、ERP 系统数据迁移及开发者打造的高性能 dBase 文件解析与导出工具。采用流式纯前端二进制解析技术，零依赖服务端上传，保障企事业单位账套与敏感情报 100% 数据私密性。
+
+## Core Capabilities
+- **双向与批量格式转换**：支持单个或多个 .dbf 批量解析，一键导出为标准 Microsoft Excel (XLSX)、CSV 或 ZIP 打包文件。
+- **智能编码探测与纠偏**：精准识别并无损转换 GBK、CP936、UTF-8、Big5 等老旧系统中文编码，彻底杜绝乱码。
+- **超大账套流式加载**：纯客户端恒定内存处理，支持数万至百万行级超大财务凭证与底稿快速转换。
+- **零信任隐私防护**：全部计算均在浏览器端执行，没有任何网络请求传输文件内容。
+
+## Technical Standards & Citations
+- 遵循历史经典的 Ashton-Tate dBase III / IV / V / Visual FoxPro (.dbf) 二进制结构规范。
+- 遵循 ECMA-376 与 ISO/IEC 29500 国际 Office Open XML (XLSX) 标准。
+- 遵循 IETF RFC 4180 CSV 文本数据交换通用规范。
+- 集成成熟的 SheetJS 电子表格引擎与 Web Crypto 原生安全机制。
+
+## Key Links
+- [官网主站](https://dbf.tangtangit.com/): 在线 DBF 转 Excel 工具工作台。
+- [功能特性](https://dbf.tangtangit.com/features.html): 详细功能与规格说明。
+- [站点地图](https://dbf.tangtangit.com/sitemap.xml): 全站 XML Sitemap。
+- [开发者主页](https://www.tangtangit.com/): 糖糖IT 官方技术知识库。
