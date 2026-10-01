@@ -1,33 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dbf.tangtangit.com/</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dbf.tangtangit.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://dbf.tangtangit.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dbf.tangtangit.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dbf.tangtangit.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dbf.tangtangit.com/"/>
   </url>
   <url>
-    <loc>https://dbf.tangtangit.com/features.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://dbf.tangtangit.com/zh/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dbf.tangtangit.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://dbf.tangtangit.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dbf.tangtangit.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dbf.tangtangit.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dbf.tangtangit.com/"/>
   </url>
   <url>
-    <loc>https://dbf.tangtangit.com/about.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://dbf.tangtangit.com/es/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dbf.tangtangit.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://dbf.tangtangit.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dbf.tangtangit.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dbf.tangtangit.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dbf.tangtangit.com/"/>
   </url>
   <url>
-    <loc>https://dbf.tangtangit.com/privacy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://dbf.tangtangit.com/terms.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://dbf.tangtangit.com/contact.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://dbf.tangtangit.com/pt/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dbf.tangtangit.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://dbf.tangtangit.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dbf.tangtangit.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dbf.tangtangit.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dbf.tangtangit.com/"/>
   </url>
 </urlset>
