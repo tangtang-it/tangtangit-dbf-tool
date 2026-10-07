@@ -187,5 +187,16 @@ import DbfArticle from '@/components/DbfArticle.vue';
 
   <DbfArticle />
 
+  <!-- CTA 区 -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-band">
+        <h2>准备好转换你的数据了吗？</h2>
+        <p>完全免费，无需注册，数据全程在本机处理。</p>
+        <div style="margin-top:var(--s-lg)"><a class="btn btn-primary" href="index.html#tool">立即开始转换</a></div>
+      </div>
+    </div>
+  </section>
+
   <SiteFooter />
 </template>

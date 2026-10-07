@@ -254,29 +254,27 @@
           <h3>② 确认编码与配置</h3>
           <p>系统默认采用 GBK 智能解析，亦可根据特殊账套需求手动切换为 UTF-8 或 Big5 字符集。</p>
         </div>
-        
-    <!-- Technical Specifications, Standards & Citations Section -->
-    <div class="card" style="margin-top: 2rem; border-left: 4px solid var(--accent, #cc785c); background: rgba(204, 120, 92, 0.04); padding: 1.5rem; border-radius: 8px;">
-      <h2 style="font-size: 1.25rem; font-weight: 600; color: #2c3e50; margin-top: 0; margin-bottom: 0.75rem;">DBF to Excel 工具遵循哪些国际技术规范与标准？</h2>
-      <p style="font-size: 0.95rem; line-height: 1.6; color: #4B5563; margin-bottom: 0.75rem;">
-        为了保证历史政企账套与现代办公软件间的数据严密性与无损迁移，本工具底层严格依循以下工业级格式标准：
-      </p>
-      <ul style="line-height: 1.8; color: #4B5563; margin-bottom: 1rem; padding-left: 1.25rem;">
-        <li><strong>DBF 格式规范</strong>：遵循 <cite>Ashton-Tate dBase III / IV / V 及 Visual FoxPro (.dbf)</cite> 结构体与字段定义标准。</li>
-        <li><strong>Excel 表格标准</strong>：遵循 <cite>ECMA-376 / ISO/IEC 29500 (Office Open XML / XLSX)</cite> 电子表格技术规范。</li>
-        <li><strong>通用文本规范</strong>：遵循 <cite>IETF RFC 4180 (Common Format and MIME Type for CSV)</cite> 逗号分隔符数据标准。</li>
-        <li><strong>核心处理引擎</strong>：采用开源可信赖的 <cite>SheetJS (xlsx)</cite> 与浏览器端原生 <cite>Web Streams API</cite>。</li>
-      </ul>
-      <footer style="font-size: 0.85rem; color: #6B7280; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 0.5rem;">
-        由 <a href="https://www.tangtangit.com/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">糖糖IT</a> 团队独立开发与维护 • 100% 浏览器本地离线沙盒运算 • 绝不上传文件内容
-      </footer>
-    </div>
-
-
-    <div class="card">
+        <div class="card">
           <h3>③ 导出为 Excel (XLSX)</h3>
           <p>点击「开始转换」按钮，数据秒级解析完毕，即可直接保存为标准 Excel 表格或批量打包下载。</p>
         </div>
+      </div>
+
+      <!-- 遵循标准说明 -->
+      <div class="card" style="margin-top: var(--s-lg); border-left: 4px solid var(--accent, #cc785c); background: rgba(204, 120, 92, 0.04); padding: 1.5rem; border-radius: 8px;">
+        <h2 style="font-size: 1.25rem; font-weight: 600; color: #2c3e50; margin-top: 0; margin-bottom: 0.75rem;">DBF to Excel 工具遵循哪些国际技术规范与标准？</h2>
+        <p style="font-size: 0.95rem; line-height: 1.6; color: #4B5563; margin-bottom: 0.75rem;">
+          为了保证历史政企账套与现代办公软件间的数据严密性与无损迁移，本工具底层严格依循以下工业级格式标准：
+        </p>
+        <ul style="line-height: 1.8; color: #4B5563; margin-bottom: 1rem; padding-left: 1.25rem;">
+          <li><strong>DBF 格式规范</strong>：遵循 <cite>Ashton-Tate dBase III / IV / V 及 Visual FoxPro (.dbf)</cite> 结构体与字段定义标准。</li>
+          <li><strong>Excel 表格标准</strong>：遵循 <cite>ECMA-376 / ISO/IEC 29500 (Office Open XML / XLSX)</cite> 电子表格技术规范。</li>
+          <li><strong>通用文本规范</strong>：遵循 <cite>IETF RFC 4180 (Common Format and MIME Type for CSV)</cite> 逗号分隔符数据标准。</li>
+          <li><strong>核心处理引擎</strong>：采用开源可信赖的 <cite>SheetJS (xlsx)</cite> 与浏览器端原生 <cite>Web Streams API</cite>。</li>
+        </ul>
+        <footer style="font-size: 0.85rem; color: #6B7280; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 0.5rem;">
+          由 <a href="https://www.tangtangit.com/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">糖糖IT</a> 团队独立开发与维护 • 100% 浏览器本地离线沙盒运算 • 绝不上传文件内容
+        </footer>
       </div>
     </div>
   </section>
@@ -284,13 +282,13 @@
   <!-- 深度技术指南模块 -->
   <section class="section" id="dbf-guide" style="background:var(--surface-card);border-top:1px solid var(--hairline);">
     <div class="container article-content">
-      <div class="sec-head">
+      <div class="sec-head" style="max-width:800px;margin-left:auto;margin-right:auto;text-wrap:balance;">
         <h2>DBF to Excel 深度技术解析与数据转换全指南</h2>
         <p>全面解析 dBASE / FoxPro 数据结构，攻克 dbf to excel 转换中的中文乱码、字段截断与类型映射难点。</p>
       </div>
       
-      <div class="article-diagram" style="margin:var(--s-lg) 0;text-align:center;">
-        <img src="/brand/dbf-to-excel-flow.svg" alt="DBF to Excel 转换数据流与字段类型映射流程图" width="800" height="320" style="max-width:100%;height:auto;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.06);" loading="lazy">
+      <div class="article-diagram" style="margin:var(--s-lg) 0 var(--s-xl);display:flex;justify-content:center;align-items:center;width:100%;">
+        <img src="/brand/dbf-to-excel-flow.svg" alt="DBF to Excel 转换数据流与字段类型映射流程图" width="800" height="320" style="display:block;margin:0 auto;max-width:100%;width:800px;height:auto;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.06);" loading="lazy">
       </div>
 
       <article style="text-align:left;line-height:1.85;color:var(--ink-secondary);max-width:860px;margin:0 auto;">
@@ -365,7 +363,7 @@
     </div>
   </section>
 
-  <!-- CTA 行动召唤区 -->
+<!-- CTA 行动召唤区 -->
   <section class="section">
     <div class="container">
       <div class="cta-band">

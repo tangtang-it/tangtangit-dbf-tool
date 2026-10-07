@@ -8,8 +8,8 @@
         <p>全面解析 dBASE / FoxPro 数据结构，攻克 dbf to excel 转换中的中文乱码、字段截断与类型映射难点。</p>
       </div>
       
-      <div class="article-diagram" style="margin:var(--s-lg) 0;text-align:center;">
-        <img src="/brand/dbf-to-excel-flow.svg" alt="DBF to Excel 转换数据流与字段类型映射流程图" width="800" height="320" style="max-width:100%;height:auto;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.06);" loading="lazy">
+      <div class="article-diagram">
+        <img class="flow-svg" src="/brand/dbf-to-excel-flow.svg" alt="DBF to Excel 转换数据流与字段类型映射流程图" width="800" height="320" loading="lazy">
       </div>
 
       <article>
@@ -49,6 +49,28 @@
   </section>
 </template>
 <style scoped>
+.article-content .sec-head {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-wrap: balance;
+}
+.article-diagram {
+  margin: var(--s-lg) 0 var(--s-xl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.flow-svg {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
 .article-content article {
   text-align: left;
   line-height: 1.85;
