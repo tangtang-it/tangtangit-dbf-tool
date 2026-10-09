@@ -8,7 +8,7 @@ import SiteFooter from '@/components/SiteFooter.vue';
 
   <section class="page-hero">
     <div class="container">
-      <div class="crumb"><a href="index.html">首页</a> / 关于我们</div>
+      <div class="crumb"><a href="/">首页</a> / 关于我们</div>
       <h1>关于我们</h1>
       <p>让老数据活起来——专为中文财务与 ERP 数据打造的格式转换工具。</p>
     </div>
@@ -33,7 +33,7 @@ import SiteFooter from '@/components/SiteFooter.vue';
         <p>核心引擎以流式读写实现，保障超大文件的稳定与快速处理。我们持续打磨编码检测、类型推断与边界容错，力求在真实的生产数据上表现得可靠而准确。</p>
 
         <h2>联系方式</h2>
-        <p>如果你有任何问题、建议或合作意向，欢迎访问<a href="contact.html">联系我们</a>页面。也欢迎查看我们的<a href="terms.html">服务条款</a>与<a href="privacy.html">隐私政策</a>。</p>
+        <p>如果你有任何问题、建议或合作意向，欢迎访问<a href="/contact">联系我们</a>页面。也欢迎查看我们的<a href="/terms">服务条款</a>与<a href="/privacy">隐私政策</a>。</p>
       </div>
     </div>
   </section>

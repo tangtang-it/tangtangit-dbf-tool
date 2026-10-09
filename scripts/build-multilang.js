@@ -14,26 +14,26 @@ const originalTemplate = fs.readFileSync(TEMPLATE_PATH, 'utf-8');
 
 export const languages = [
   {
+    code: 'zh-CN',
+    htmlLang: 'zh-CN',
+    dir: '',
+    name: '简体中文',
+    title: 'DBF to Excel 在线转换工具 - 免费批量导出 XLSX/CSV (免安装本地处理)',
+    description: '免费专业 DBF to Excel 在线转换工具，支持 Visual FoxPro 与 dBase III/IV 批量导出 XLSX/CSV 表格。智能解决 GBK 中文乱码，100% 浏览器本地离线解析，免安装且零数据上传，彻底保障财务与企业数据隐私安全。',
+    keywords: 'dbf to excel, dbf转excel, dbf to xlsx, foxpro转excel, dbase转excel, dbf导出csv, gbk乱码解决, 免安装dbf转换',
+    h1: 'DBF to Excel 在线转换工具：快速批量将 FoxPro/dBase 转为 Excel (XLSX/CSV)',
+    lead: '专为财务与 ERP 数据打造的 <strong>dbf to excel</strong> 在线转换工具。自动解决 GBK / UTF-8 中文乱码，支持将 Visual FoxPro 及 dBase DBF 格式快速批量导出为 Excel (XLSX) 与 CSV 文件，100% 浏览器本地离线处理，保障数据安全。'
+  },
+  {
     code: 'en',
     htmlLang: 'en',
-    dir: '',
+    dir: 'en',
     name: 'English',
     title: 'DBF to Excel Converter Online - Free Batch XLSX Export',
     description: '100% Free online DBF to Excel converter. Batch convert dBase III/IV and FoxPro .dbf files to XLSX/CSV with automatic encoding detection. 100% private in-browser tool.',
     keywords: 'dbf to excel, convert dbf to excel, dbf to xlsx, dbf converter, dbase to excel, free dbf viewer',
     h1: 'DBF to Excel Converter Online: Free Batch XLSX & CSV Export',
     lead: 'Professional, privacy-first <strong>dbf to excel</strong> web converter for financial ledgers, legacy ERP data, and accounting records. Automatically detects GBK, UTF-8, and ANSI encodings with zero server uploads.'
-  },
-  {
-    code: 'zh-CN',
-    htmlLang: 'zh-CN',
-    dir: 'zh',
-    name: '简体中文',
-    title: 'DBF to Excel 在线转换工具 | 免费批量将 DBF 转为 Excel (XLSX)',
-    description: '免费专业的 DBF to Excel 在线转换工具，支持批量将 DBF 转为 Excel (XLSX) 表格。自动识别 GBK/UTF-8 中文编码，流式处理超大文件，数据 100% 本机安全处理不上传。',
-    keywords: 'dbf to excel, dbf转excel, dbf to xlsx, dbf, excel, dbf文件转换, 财务台账转换, gbk编码',
-    h1: 'DBF to Excel 在线转换工具：快速批量将 DBF 转为 Excel',
-    lead: '专为财务与 ERP 数据打造的 <strong>dbf to excel</strong> 在线转换工具。自动识别 GBK / UTF-8 中文编码，支持批量将 DBF 格式快速转换为 Excel (XLSX) 文件，数据全程本机处理，安全高效。'
   },
   {
     code: 'es',
@@ -84,6 +84,8 @@ for (const lang of languages) {
   html = html.replace(/<meta name="description" content=".*?"\s*\/?>/i, '<meta name="description" content="' + lang.description + '">');
   html = html.replace(/<meta name="keywords" content=".*?"\s*\/?>/i, '<meta name="keywords" content="' + lang.keywords + '">');
 
+  // Strip any existing hreflang tags first to avoid duplicates
+  html = html.replace(/\s*<link rel="alternate" hreflang="[^"]*"[^>]*\/?>/gi, '');
   const canonicalTag = '<link rel="canonical" href="' + canonicalUrl + '">\n' + hreflangTags;
   html = html.replace(/<link rel="canonical" href=".*?"\s*\/?>/i, canonicalTag);
 

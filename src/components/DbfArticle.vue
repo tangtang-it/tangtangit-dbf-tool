@@ -39,7 +39,7 @@
         </ul>
 
         <h3>五、数据安全承诺与企业合规支持</h3>
-        <p>我们深刻理解财务与业务数据的私密性与严肃性。本工具不设用户注册壁垒、不索取敏感权限、不收集用户上传的任何表格数据。无论是批量处理上百张历史月份报表，还是转换单个超大台账文件，您的数据均在您所信任的本地电脑环境安全流转。如需了解更多底层架构细节，欢迎查阅我们的<a href="about.html">关于我们</a>与<a href="features.html">功能特性</a>页面，商业审计合规要求亦可参考<a href="privacy.html">隐私政策</a>与<a href="terms.html">服务条款</a>，或通过<a href="contact.html">联系支持</a>与我们取得联系。</p>
+        <p>我们深刻理解财务与业务数据的私密性与严肃性。本工具不设用户注册壁垒、不索取敏感权限、不收集用户上传的任何表格数据。无论是批量处理上百张历史月份报表，还是转换单个超大台账文件，您的数据均在您所信任的本地电脑环境安全流转。如需了解更多底层架构细节，欢迎查阅我们的<a href="/about">关于我们</a>与<a href="/features">功能特性</a>页面，商业审计合规要求亦可参考<a href="/privacy">隐私政策</a>与<a href="/terms">服务条款</a>，或通过<a href="/contact">联系支持</a>与我们取得联系。</p>
         
         <p style="margin-top:var(--s-md);font-size:0.9em;color:var(--ink-muted);">
           参考权威技术标准：可查阅 <a href="https://en.wikipedia.org/wiki/.dbf" target="_blank" rel="noopener noreferrer">dBASE (.dbf) 数据库文件格式规范 (Wikipedia)</a>，或访问 <a href="https://tangtangit.com/" target="_blank" rel="noopener noreferrer">糖糖it 技术博客</a> 获取更多实用独立开发与数据处理工具。

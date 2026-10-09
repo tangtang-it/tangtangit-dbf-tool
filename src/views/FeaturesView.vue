@@ -8,7 +8,7 @@ import SiteFooter from '@/components/SiteFooter.vue';
 
   <section class="page-hero">
     <div class="container">
-      <div class="crumb"><a href="index.html">首页</a> / 功能特性</div>
+      <div class="crumb"><a href="/">首页</a> / 功能特性</div>
       <h1>功能特性</h1>
       <p>专为中文财务 / ERP 环境设计的 DBF ⇄ XLSX 双向转换能力，从编码到类型、从单文件到批量全覆盖。</p>
     </div>
@@ -82,7 +82,7 @@ import SiteFooter from '@/components/SiteFooter.vue';
       <div class="cta-band">
         <h2>功能如此强大，且完全免费</h2>
         <p>无需注册，数据本地安全处理。</p>
-        <div style="margin-top:var(--s-lg)"><a class="btn btn-primary" href="index.html#tool">立即开始转换</a></div>
+        <div style="margin-top:var(--s-lg)"><a class="btn btn-primary" href="/#tool">立即开始转换</a></div>
       </div>
     </div>
   </section>

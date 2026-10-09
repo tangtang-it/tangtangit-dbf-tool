@@ -8,7 +8,7 @@ import SiteFooter from '@/components/SiteFooter.vue';
 
   <section class="page-hero">
     <div class="container">
-      <div class="crumb"><a href="index.html">首页</a> / 隐私政策</div>
+      <div class="crumb"><a href="/">首页</a> / 隐私政策</div>
       <h1>隐私政策</h1>
       <p>本政策说明了我们（「DBF 转换工具」）如何处理您在使用本网站及转换服务时涉及的数据。我们非常重视您的隐私。</p>
       <div class="updated-date">最后更新：2026 年 8 月</div>
@@ -51,7 +51,7 @@ import SiteFooter from '@/components/SiteFooter.vue';
         <p>我们可能不时更新本隐私政策。任何变更都会在本页面发布，并更新「最后更新」日期。重大变更我们会通过显著方式提示。</p>
 
         <h2>8. 联系我们</h2>
-        <p>如果您对本隐私政策有任何疑问，请通过<a href="contact.html">联系我们</a>页面与我们取得联系。</p>
+        <p>如果您对本隐私政策有任何疑问，请通过<a href="/contact">联系我们</a>页面与我们取得联系。</p>
       </div>
     </div>
   </section>

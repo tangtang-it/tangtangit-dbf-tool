@@ -32,7 +32,7 @@ function submitForm() {
 
   <section class="page-hero">
     <div class="container">
-      <div class="crumb"><a href="index.html">首页</a> / 联系我们</div>
+      <div class="crumb"><a href="/">首页</a> / 联系我们</div>
       <h1>联系我们</h1>
       <p>有问题、有建议，或希望洽谈合作？欢迎与我们联系。</p>
     </div>
@@ -77,7 +77,7 @@ function submitForm() {
           </div>
           <div class="card">
             <h3 style="margin-top:0">相关页面</h3>
-            <p style="margin-bottom:0"><a href="privacy.html">隐私政策</a> · <a href="terms.html">服务条款</a> · <a href="about.html">关于我们</a></p>
+            <p style="margin-bottom:0"><a href="/privacy">隐私政策</a> · <a href="/terms">服务条款</a> · <a href="/about">关于我们</a></p>
           </div>
         </div>
       </div>

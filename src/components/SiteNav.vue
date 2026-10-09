@@ -32,7 +32,7 @@ onBeforeUnmount(() => document.removeEventListener('click', onDocClick));
 <template>
   <header class="nav">
     <div class="nav-inner">
-      <a class="nav-brand" href="index.html">
+      <a class="nav-brand" href="/">
         <span class="mark">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M5 12l4-4M5 12l4 4M19 12l-4-4M19 12l-4 4"/></svg>
         </span>
@@ -42,11 +42,11 @@ onBeforeUnmount(() => document.removeEventListener('click', onDocClick));
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
       <nav class="nav-links" :class="{ open: menuOpen }" aria-label="主导航" @click="onLinkClick">
-        <a href="index.html#tool">在线转换</a>
-        <a href="features.html">功能特性</a>
-        <a href="index.html#guide">使用教程</a>
-        <a href="index.html#faq">常见问题</a>
-        <a href="about.html">关于</a>
+        <a href="/#tool">在线转换</a>
+        <a href="/features">功能特性</a>
+        <a href="/#guide">使用教程</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/about">关于</a>
         <div class="nav-more" :class="{ open: moreOpen }">
           <button class="nav-more-btn" aria-haspopup="true" :aria-expanded="moreOpen ? 'true' : 'false'" @click.stop="moreOpen = !moreOpen">
             更多
@@ -64,7 +64,7 @@ onBeforeUnmount(() => document.removeEventListener('click', onDocClick));
             </a>
           </div>
         </div>
-        <span class="nav-cta"><a class="btn btn-utility" href="index.html#tool">立即开始</a></span>
+        <span class="nav-cta"><a class="btn btn-utility" href="/#tool">立即开始</a></span>
       </nav>
     </div>
   </header>

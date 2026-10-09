@@ -18,11 +18,11 @@ import DbfArticle from '@/components/DbfArticle.vue';
           <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>
           免费 · 本机处理 · 数据不上传
         </span>
-        <h1>DBF to Excel 在线转换工具：快速批量将 DBF 转为 Excel</h1>
-        <p class="lead">专为财务与 ERP 数据打造的 <strong>dbf to excel</strong> 在线转换工具。自动识别 GBK / UTF-8 中文编码，支持批量将 DBF 格式快速转换为 Excel (XLSX) 文件，数据全程本机处理，安全高效。</p>
+        <h1>DBF to Excel 在线转换工具：快速批量将 FoxPro/dBase 转为 Excel (XLSX/CSV)</h1>
+        <p class="lead">专为财务与 ERP 数据打造的 <strong>dbf to excel</strong> 在线转换工具。自动解决 GBK / UTF-8 中文乱码，支持将 Visual FoxPro 及 dBase DBF 格式快速批量导出为 Excel (XLSX) 与 CSV 文件，100% 浏览器本地离线处理，保障数据安全。</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="index.html#tool">免费在线转换</a>
-          <a class="btn btn-secondary" href="features.html">查看功能特性</a>
+          <a class="btn btn-primary" href="/#tool">免费在线转换</a>
+          <a class="btn btn-secondary" href="/features">查看功能特性</a>
         </div>
         <div class="stats">
           <div class="stat"><b>10 万行</b><span>约 4 秒完成</span></div>
@@ -168,7 +168,7 @@ import DbfArticle from '@/components/DbfArticle.vue';
         </details>
         <details>
           <summary>可以商用吗？需要付费吗？</summary>
-          <p>本工具完全免费。建议查阅<a href="terms.html">服务条款</a>与<a href="privacy.html">隐私政策</a>。若在生产环境大规模使用，欢迎通过<a href="contact.html">联系我们</a>获取支持。</p>
+          <p>本工具完全免费。建议查阅<a href="/terms">服务条款</a>与<a href="/privacy">隐私政策</a>。若在生产环境大规模使用，欢迎通过<a href="/contact">联系我们</a>获取支持。</p>
         </details>
       </div>
     </div>
@@ -180,7 +180,7 @@ import DbfArticle from '@/components/DbfArticle.vue';
       <div class="cta-band">
         <h2>准备好转换你的数据了吗？</h2>
         <p>完全免费，无需注册，数据全程在本机处理。</p>
-        <div style="margin-top:var(--s-lg)"><a class="btn btn-primary" href="index.html#tool">立即开始转换</a></div>
+        <div style="margin-top:var(--s-lg)"><a class="btn btn-primary" href="/#tool">立即开始转换</a></div>
       </div>
     </div>
   </section>
@@ -193,7 +193,7 @@ import DbfArticle from '@/components/DbfArticle.vue';
       <div class="cta-band">
         <h2>准备好转换你的数据了吗？</h2>
         <p>完全免费，无需注册，数据全程在本机处理。</p>
-        <div style="margin-top:var(--s-lg)"><a class="btn btn-primary" href="index.html#tool">立即开始转换</a></div>
+        <div style="margin-top:var(--s-lg)"><a class="btn btn-primary" href="/#tool">立即开始转换</a></div>
       </div>
     </div>
   </section>
